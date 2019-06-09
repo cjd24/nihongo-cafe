@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>☕ nihongo café</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Chelsea Davies">
+  	<meta name="description" content="a website with Japanese language self-study resources.">
+    <meta name="keywords" content="Japanese language, self-study, study Japanese, Japan, Japanese culture, nihongo">
+
+    <!-- Bootstrap v4.3.1 CSS stylesheet -->
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+    />
+
+     <!-- Local CSS stylesheet -->
+     <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+</head>
+
+<body style="background-color: lightgrey; background-image: url(https://www.transparenttextures.com/patterns/black-twill.png); opacity: 0.75; background-blend-mode:overlay;">
+    <header class="sticky-top">
+            <nav class="navbar navbar-expand-lg navbar-light bg-lighter">
+                <a class="navbar-brand" href="index.html">ⓝⓘⓗⓞⓝⓖⓞ ⓒⓐⓕⓔ</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="index.html">Home</a>
+                        <a class="nav-item nav-link" href="kanapage.html">Kana</a>
+                        <a class="nav-item nav-link" href="vocabgrammar.html">Vocabulary + Grammar</a>
+                        <a class="nav-item nav-link" href="listening.html">Listening</a>
+                        <a class="nav-item nav-link" href="reading.html">Reading</a>
+                        <a class="nav-item nav-link" href="kanji.html">Kanji</a>
+                        <a class="nav-item nav-link" href="https://jisho.org/"target="_blank">Dictionary</a>
+                    </div>
+                </div>
+            </nav>
+    </header>
+    
+    <main>
+        <h2 style="font-weight: lighter; text-align: center; padding-top: 50px;">Vᴏᴄᴀʙᴜʟᴀʀʏ + Gʀᴀᴍᴍᴀʀ</h2> 
+        <div id="timeTimer" style="text-align: center;">
+                <div class="values" style="font-weight: lighter;">00:00:00</div>
+                <div>
+                    <button class="startButton btn-light" style="color:dimgray; opacity: 0.75;">start</button>
+                    <button class="pauseButton btn-light" style="color:dimgray; opacity: 0.75;">pause</button>
+                    <button class="resetButton btn-light" style="color:dimgray; opacity: 0.75;">reset</button>
+                </div>
+        </div>
+    </main>
+     <!-- jQuery library (required by Bootstrap's JavaScript library) -->
+     <script
+     src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+     crossorigin="anonymous"></script>
+
+   <!-- Bootstrap v4.3.1 JavaScript library -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+     <!-- Local Javascript File -->
+     <script src="js/app.js"></script>
+
+      <!-- https://albert-gonzalez.github.io/easytimer.js/ -->
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+      <script src="lib/easytimer/dist/easytimer.min.js"></script>
+      <script>
+          var timerInstance = new easytimer.Timer();
+      </script>
+
+
+  
+                    
+</body>
+
+<footer>
+     
+</footer>
+
+</html> 
+

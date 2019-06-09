@@ -1,0 +1,11 @@
+
+.rainbow {
+    background-image: linear-gradient(to left, rgb(184, 161, 184), rgba(105, 59, 138, 0.722), rgb(127, 204, 245), rgb(110, 230, 168), rgb(214, 220, 98), rgb(255, 202, 104), rgb(247, 151, 151));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+.rainbow-bckgd {
+  background-image: linear-gradient(to left, rgb(184, 161, 184), rgba(105, 59, 138, 0.722), rgb(127, 204, 245), rgb(110, 230, 168), rgb(214, 220, 98), rgb(255, 202, 104), rgb(247, 151, 151));
+}
+
