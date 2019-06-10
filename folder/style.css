@@ -7,5 +7,19 @@
 
 .rainbow-bckgd {
   background-image: linear-gradient(to left, rgb(184, 161, 184), rgba(105, 59, 138, 0.722), rgb(127, 204, 245), rgb(110, 230, 168), rgb(214, 220, 98), rgb(255, 202, 104), rgb(247, 151, 151));
+
+  -webkit-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+  
+  @-webkit-keyframes AnimationName {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+  @keyframes AnimationName { 
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
 }
 
