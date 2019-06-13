@@ -22,10 +22,10 @@
     <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
 </head>
 
-<body style="background-color: lightgrey; background-image: url(https://www.transparenttextures.com/patterns/black-twill.png); opacity: 0.75; background-blend-mode:overlay;">
+<body style="background-color: lightgrey; background-image: url(https://www.transparenttextures.com/patterns/black-twill.png); background-blend-mode:overlay;">
     <header class="sticky-top">
             <nav class="navbar navbar-expand-lg navbar-light bg-lighter">
-                <a class="navbar-brand" href="index.html">ⓝⓘⓗⓞⓝⓖⓞ ⓒⓐⓕⓔ</a>
+                <a class="navbar-brand" href="index.html"><a href="#" class="pull-left"><img src="/path/to/image.png"></a> ⓝⓘⓗⓞⓝⓖⓞ ⓒⓐⓕⓔ</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -39,49 +39,58 @@
                         <a class="nav-item nav-link" href="kanji.html">Kanji</a>
                         <a class="nav-item nav-link" href="https://jisho.org/"target="_blank">Dictionary</a>
                     </div>
+                    <div class="login-container">
+                        <form action="/action_page.php">
+                          <input type="text" style="width: 80px; font-weight: lighter; font-size: smaller;" placeholder="@neko123" name="username">
+                          <input type="text" style="width: 80px; font-weight: lighter; font-size: smaller;" placeholder="password" name="psw">
+                          <button class="button btn-smaller btn-info" type="submit" style="font-weight: lighter; font-size: smaller;">Login</button>
+                        </form>
+                      </div>
                 </div>
             </nav>
     </header>
-    
+    <div>
+        <img src="images/kanji.png" style="height: 650px; width: 100%;" alt="daily challenge">
+    </div>
     <main>
-      <div style="padding-top: 50px; padding-bottom: 50px; background-color: #9c9c9c;background-color: #9c9c9c;
+      <div style="padding-top: 20px; padding-bottom: 20px; background-color: #9c9c9c;
       background-image: url(https://www.transparenttextures.com/patterns/asfalt-light.png);">
-        <h2 style="font-weight: lighter; text-align: center;">Wᴇʟᴄᴏᴍᴇ ᴛᴏ ⓝⓘⓗⓞⓝⓖⓞ ⓒⓐⓕⓔ</h2>
-        <h3 style="font-weight: light; text-align: center;">a curated self-study resource for 日本語</h3>
-        <p style="font-weight: lighter; font-style: italic; text-align: center;">On each page is a timer, which you can use to challenge yourself to study everyday. Even for 10 minutes here & there, you'll see improvements. ガンバて下さい!</p>
+        <h2 style="font-weight: lighter; text-align: center;">Welcome to ⓝⓘⓗⓞⓝⓖⓞ ⓒⓐⓕⓔ</h2>
+        <h3 style="font-weight: lighter; text-align: center;">a curated 日本語 self-study resource</h3>
+        <p style="font-weight: lighter; text-align: center;">ガンバて下さい!</p>
+        <div class="iframe-container-music" style="text-align: center; padding-right: 10px;">
+            <iframe width="500" height="65" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&feed=%2Ftanakachang%2Fjapanese-city-pops%2F" frameborder="4" ></iframe>
+          </div>
       </div>
             <div class="container mt-3">
                     <div class="card-deck mb-3 text-justify font-weight-light">
                       <div class="card mb-4 shadow-lg">
                         <div>
-                          <img class="card-img-top" style="opacity: 0.75" src="https://wallpaperaccess.com/full/200712.png">
+                          <img class="card-img-top" style="opacity: 0.75" src="images/kansai-university-84363_1280.jpg">
                         </div>
-                        <div class="card-body">
+                        <div class="card-body" style="text-align: center">
                           <h4 class="card-title my-2 font-weight-normal rainbow">ひらがな ❊ カタカナ</h4>
-                          <h5 class="card-subtitle my-2 font-weight-light">Practice Kana</h5>
-                          <p class="card-text">start with the basics</p>
+                          <p class="card-text">start with the basic</p>
                           <a class="nav-item nav-link" href="kanapage.html"target="_blank"><button type="button" class="btn btn-sm btn-secondary">study now</button></a>
                         </div>
                       </div>
         
                       <div class="card mb-4 shadow-lg">
                         <div>
-                          <img class="card-img-top" style="opacity: 0.75" src="https://lh5.googleusercontent.com/H03crGYii-Hmkx_-KVQFt0daEHj5c7rGdDTv3VP7T2G8pPlY1SdkvtVlb-LpIBe8F4E2axWJElY3FGepM5Yiwc6Ew_4f1vka9jsjbkS53LlyScUbRbQ=w371">
+                          <img class="card-img-top" style="opacity: 0.75; height: 260px;" src="images/heart-it-busydesk.jpg">
                         </div>
-                        <div class="card-body">
+                        <div class="card-body" style="text-align: center">
                           <h4 class="card-title my-2 font-weight-normal rainbow">ぶんぽう ❊ たんご</h4>
-                          <h5 class="card-subtitle my-2 font-weight-light">Practice Vocabulary + Grammar</h5>
                           <p class="card-text">beginner to advanced | N5 - N1</p>
                           <a class="nav-item nav-link" href="vocabgrammar.html"target="_blank"><button type="button" class="btn btn-sm btn-secondary">study now</button></a>
                         </div>
                       </div>
                       <div class="card mb-4 shadow-lg">
                         <div>
-                          <img class="card-img-top" style="opacity: 0.75" src="https://lh6.googleusercontent.com/V3_Cm8DNjb_RxtudUlZuIEr3wAVXcUR8Xk9w1p8Y-NJSpei3NZxtEpCVqFGpgRLUM1As9zbx8C-34499S7SkYzAVe-VP_2mOwh1qtQlnBC0PbYJdd2Q=w371">
+                          <img class="card-img-top" style="opacity: 0.75; height: 260px;" src="images/music-791631_1280.jpg"/>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body" style="text-align: center">
                           <h4 class="card-title my-2 font-weight-normal rainbow">聞いている</h4>
-                          <h5 class="card-subtitle my-2 font-weight-light">Practice Listening</h5>
                           <p class="card-text">beginner to advanced | N5 - N1</p>
                           <a class="nav-item nav-link" href="listening.html"target="_blank"><button type="button" class="btn btn-sm btn-secondary">study now</button></a>
                         </div>
@@ -92,11 +101,11 @@
                     <div class="card-deck mb-3 text-justify font-weight-light">
                       <div class="card mb-4 shadow-lg">
                         <div>
-                          <img class="card-img-top" style="opacity: 0.75" src="https://lh5.googleusercontent.com/-Fpr-V1ejoUv2SioBtNAKB441U-AgMa8L33Nz_Jxz2jYPCOzCMWMufHaZrokHb8pcDozMtsDSB3v5tYTJohLH1ZL649pD4UVPJclrQqcX0Qj8yG6=w371">
+                           <!-- https://weheartit.com/entry/328185927 -->
+                          <img class="card-img-top" style="opacity: 0.75; height: 260px;" src="images/library-girl-heart-it.jpg">
                         </div>
-                        <div class="card-body">
+                        <div class="card-body" style="text-align: center">
                           <h4 class="card-title my-2 font-weight-normal rainbow">読んでいる</h4>
-                          <h5 class="card-subtitle my-2 font-weight-light">Practice Reading</h5>
                           <p class="card-text">beginner to advanced | N5 - N1</p>
                           <a class="nav-item nav-link" href="reading.html"target="_blank"><button type="button" class="btn btn-sm btn-secondary">study now</button></a>
                         </div>
@@ -104,23 +113,21 @@
         
                       <div class="card mb-4 shadow-lg">
                         <div>
-                          <img class="card-img-top" style="opacity: 0.75" src="https://lh6.googleusercontent.com/A5IgChCNxsBdQQQnZ6JfhkvUvIPgcEFq8PJcvs_toGGrM8wKKk7kSCJHmY9D99Xyplq_hnT1VQCIE8WQr5LjVljhX6wiN-_JFyKxuBRtGAsKLBKKre0=w371">
+                          <img class="card-img-top" style="opacity: 0.75; height: 260px;" src="images/studycat.jpg"> 
                         </div>
-                        <div class="card-body">
-                          <h4 class="card-title my-2 font-weight-normal rainbow">ぶんぽう ❊ たんご</h4>
-                          <h5 class="card-subtitle my-2 font-weight-light">Practice Kanji</h5>
+                        <div class="card-body" style="text-align: center">
+                          <h4 class="card-title my-2 font-weight-normal rainbow">漢字</h4>
                           <p class="card-text">beginner to advanced | N5 - N1</p>
                           <a class="nav-item nav-link" href="kanji.html"target="_blank"><button type="button" class="btn btn-sm btn-secondary">study now</button></a>
                         </div>
                       </div>
                       <div class="card mb-4 shadow-lg">
                         <div>
-                          <img class="card-img-top" style="opacity: 0.75" src="https://cdn.pixabay.com/photo/2013/02/26/02/14/kyoto-86202_1280.jpg">
+                          <img class="card-img-top" style="opacity: 0.75; height: 260px;" src="images/blossoms-clipart.jpg">
                         </div>
-                        <div class="card-body">
+                        <div class="card-body" style="text-align: center">
                           <h4 class="card-title my-2 font-weight-normal rainbow">ぶんか</h4>
-                          <h5 class="card-subtitle my-2 font-weight-light">Japanese Culture</h5>
-                          <p class="card-text">watch videos about 日本</p>
+                          <p class="card-text">take a break & explore nihon culture</p>
                           <a class="nav-item nav-link" href="nihonculture.html"target="_blank"><button type="button" class="btn btn-sm btn-secondary">explore now</button></a>
                         </div>
                       </div>
@@ -135,11 +142,15 @@
    <!-- Bootstrap v4.3.1 JavaScript library -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 
-   <!-- Local Javascript File -->
+   <!-- Local Javascript Files -->
    <script src="js/app.js"></script>
+   <script src="js/rotateBanners.js"></script>
+</body>
 
 <footer>
-     
+  <div class="container">
+    <h4 class="rainbow" style="font-family:Chalkduster; text-shadow: 2px 2px lightyellow; font-weight: 100; font-size: small;">&ensp;page created by Chelsea Davies&ensp;</h4> 
+  </div>
 </footer>
 
 </html> 

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+        
 <head>
     <title>☕ nihongo café</title>
     <meta charset="UTF-8" />
@@ -20,6 +20,17 @@
 
      <!-- Local CSS stylesheet -->
      <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+
+    <!-- Local Javascript File -->
+    <script src="js/app.js"></script>
+
+    <!-- https://albert-gonzalez.github.io/easytimer.js/ -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easytimer/dist/easytimer.min.js"></script>
+    <script>
+        var timerInstance = new easytimer.Timer();
+    </script>
 </head>
 
 <body style="background-color: lightgrey; background-image: url(https://www.transparenttextures.com/patterns/black-twill.png); opacity: 0.75; background-blend-mode:overlay;">
@@ -44,43 +55,192 @@
     </header>
     
     <main>
-        <h2 style="font-weight: lighter; text-align: center; padding-top: 50px;">Vᴏᴄᴀʙᴜʟᴀʀʏ + Gʀᴀᴍᴍᴀʀ</h2> 
-        <div id="timeTimer" style="text-align: center;">
+        <div id="timeTimer" style="text-align:left; padding-left: 20px;">
+                <h6>V&ensp;o&ensp;c&ensp;ᴀ&ensp;ʙ&ensp;ᴜ&ensp;ʟ&ensp;ᴀ&ensp;ʀ&ensp;ʏ&ensp;&ensp;+&ensp;&ensp;G&ensp;ʀ&ensp;ᴀ&ensp;ᴍ&ensp;ᴍ&ensp;ᴀ&ensp;ʀ</h6>
                 <div class="values" style="font-weight: lighter;">00:00:00</div>
                 <div>
-                    <button class="startButton btn-light" style="color:dimgray; opacity: 0.75;">start</button>
-                    <button class="pauseButton btn-light" style="color:dimgray; opacity: 0.75;">pause</button>
-                    <button class="resetButton btn-light" style="color:dimgray; opacity: 0.75;">reset</button>
+                    <button class="startButton btn-light rainbow-bckgd" style="color:white; opacity: 0.75; font-weight: bold;">start</button>
+                    <button class="pauseButton btn-light rainbow-bckgd" style="color:white; opacity: 0.75; font-weight: bold;">pause</button>
+                    <button class="resetButton btn-light rainbow-bckgd" style="color:white; opacity: 0.75; font-weight: bold;">reset</button>
                 </div>
         </div>
+        <div class="container mt-3">
+                <div class="card-deck mb-3 text-justify font-weight-light">
+                    <div class="card-body card mb-4 shadow-lg" style="text-align: center; margin-top: 50px; background-image: url(https://www.publicdomainpictures.net/pictures/30000/nahled/light-wood-texture.jpg);">
+                        <div>
+                            <img class="card-img-top" style="height: 315px;" src="images/tae-kim2.png">
+                        </div>
+                        <div style="text-align: center;">
+                            <h5 class="card-title my-2 font-weight-lighter">Tae Kim's Grammar Guide</h5>
+                            <h6 class="card-subtitle my-2 font-weight-lighter">comprehensive [N5-N1] grammar</h6>
+                            <h1>&ensp;</h1>
+                            <a class="nav-item nav-link" href="http://www.guidetojapanese.org/learn/grammar/stateofbeing"target="_blank"><button type="button" class="btn btn-block btn-sm btn-secondary font-weight-lighter">Start Here</button></a>
+                        </div>
+                    </div>
+                    <div class="card-body card mb-4 shadow-lg" style="text-align: center; margin-top: 50px; background-image: url(https://www.publicdomainpictures.net/pictures/30000/nahled/light-wood-texture.jpg);">
+                        <div>
+                            <img class="card-img-top" style="opacity: 0.75; height: 315px;" src="images/jpclass-vocab.png">
+                        </div>
+                        <div style="text-align: center;">
+                            <h5 class="card-title my-2 font-weight-lighter">Japaneseclass.jp</h5>
+                            <h6 class="card-subtitle my-2 font-weight-lighter">learn vocabulary and gain points by testing [N5-N1]</h6>
+                            <h1>&ensp;</h1>
+                            <a class="nav-item nav-link" href="https://japaneseclass.jp/lessons"target="_blank"><button type="button" class="btn btn-block btn-sm btn-secondary font-weight-lighter">Start Here</button></a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-3">
+                    <div class="card-deck mb-3 text-justify font-weight-light">
+                        <div class="card-body card mb-4 shadow-lg" style="text-align: center; margin-top: 50px; background-image: url(https://www.publicdomainpictures.net/pictures/30000/nahled/light-wood-texture.jpg);">
+                            <div>
+                                <img class="card-img-top" style="height: 315px;" src="images/Screen Shot 2019-06-10 at 2.20.55 PM.png">
+                            </div>
+                            <div style="text-align: center;">
+                                <h5 class="card-title my-2 font-weight-lighter">Memrise</h5>
+                                <h6 class="card-subtitle my-2 font-weight-lighter">various curated modules [N5-N1]</h6>
+                                <h1>&ensp;</h1>
+                                <a class="nav-item nav-link" href="https://www.memrise.com/courses/english/japanese-4/"target="_blank"><button type="button" class="btn btn-block btn-sm btn-secondary font-weight-lighter">Start Here</button></a>
+                            </div>
+                        </div>
+                        <div class="card-body card mb-4 shadow-lg" style="text-align: center; margin-top: 50px; background-image: url(https://www.publicdomainpictures.net/pictures/30000/nahled/light-wood-texture.jpg);">
+                            <div>
+                                <img class="card-img-top" style="height: 315px;" src="images/Screen Shot 2019-06-10 at 2.45.37 PM.png">
+                            </div>
+                            <div style="text-align: center;">
+                                <h5 class="card-title my-2 font-weight-lighter">Bondlingo</h5>
+                                <h6 class="card-subtitle my-2 font-weight-lighter">JLPT video courses + tests [N5-N1]</h6>
+                                <h1>&ensp;</h1>
+                                <a class="nav-item nav-link" href="https://bondlingo.tv"target="_blank"><button type="button" class="btn btn-block btn-sm btn-secondary font-weight-lighter">Start Here</button></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="container mt-3">
+                    <div class="card-deck mb-3 text-justify font-weight-light">
+                        <div class="card-body card mb-4 shadow-lg" style="text-align: center; margin-top: 50px; background-image: url(https://www.publicdomainpictures.net/pictures/30000/nahled/light-wood-texture.jpg);">
+                            <div>
+                                <img class="card-img-top" style="height: 315px;" src="images/easy-japanese-tv-nhk.png">
+                            </div>
+                            <div style="text-align: center;">
+                                <h5 class="card-title my-2 font-weight-lighter">NHK World Easy Japanese</h5>
+                                <h6 class="card-subtitle my-2 font-weight-lighter">lessons on grammar + vocab with explanations</h6>
+                                <h1>&ensp;</h1>
+                                <a class="nav-item nav-link" href="https://www.nhk.or.jp/lesson/en/easyjapanese/"target="_blank"><button type="button" class="btn btn-block btn-sm btn-secondary font-weight-lighter">Start Here</button></a>
+                            </div>
+                        </div>
+                        <div class="card-body card mb-4 shadow-lg" style="text-align: center; margin-top: 50px; background-image: url(https://www.publicdomainpictures.net/pictures/30000/nahled/light-wood-texture.jpg);">
+                            <div>
+                                <img class="card-img-top" style="height: 315px;" src="images/kansai-university-84363_1280.jpg">
+                            </div>
+                            <div style="text-align: center;">
+                                <h5 class="card-title my-2 font-weight-lighter">JP Drills</h5>
+                                <h6 class="card-subtitle my-2 font-weight-lighter">JPLT exam level quizzes [N5-N1]</h6>
+                                <h1>&ensp;</h1>
+                                <a class="nav-item nav-link" href="https://www.jpdrills.com"target="_blank"><button type="button" class="btn btn-block btn-sm btn-secondary font-weight-lighter">Start Here</button></a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            
+            <button class="rainbow-bckgd button btn-lg" onclick="showFunction()" style="font-weight: lighter;">ⓥⓘⓓⓔⓞⓢ</button>
+             
+            <div id="videodiv">
+                    <h1 display="none">This is my DIV element.</h1>>
+            </div>
+
+            <div class="container mt-3">
+                    <div class="card-deck mb-3 text-justify font-weight-light">
+                        <div class="card-body card mb-4 shadow-lg" style="text-align: center; margin-top: 50px; background-image: url(https://www.publicdomainpictures.net/pictures/30000/nahled/light-wood-texture.jpg);">
+                                <div class="iframe-container">
+                                        <iframe width="490" height="315"  
+                                            src="https://www.youtube.com/embed/videoseries?list=PLag_mhJfCJ-1-EZcPapMFPTlzVzwjz33M" 
+                                            frameborder="4" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                        </iframe>
+                                </div>
+                                <h5 class="card-title my-2 font-weight-lighter">Nihongoal</h5>
+                                <h6 class="card-subtitle my-2 font-weight-lighter">minna no nihongo textbook chapter 1 - 25 [playlist]</h6>
+                                <a class="nav-item nav-link" href="https://www.amazon.com/Minna-Nihongo-Book-Bk-Japanese/dp/4883191028/ref=sr_1_9?crid=1ZI7B37JF7YG&keywords=minna+no+nihongo+1&qid=1560284332&s=gateway&sprefix=minna+no+%2Caps%2C210&sr=8-9"target="_blank"><button type="button" class="btn btn-block btn-sm btn-light font-weight-lighter">Buy Minna no Nihongo textbook Here [optional]</button></a>
+                                <small>*pro tip: while it seems intimidating at first, using a textbook that's only in Japanese will accelerate your reading skills.</small>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container mt-3">
+                        <div class="card-deck mb-3 text-justify font-weight-light">
+                            <div class="card-body card mb-4 shadow-lg" style="text-align: center; margin-top: 50px; background-image: url(https://www.publicdomainpictures.net/pictures/30000/nahled/light-wood-texture.jpg);">
+                                    <div class="iframe-container">
+                                            <iframe width="490" height="315"  
+                                                src="https://www.youtube.com/embed/videoseries?list=PLzfrZ0tkPLmzydrzFSuHhuNsXMlwjnBQa" 
+                                                frameborder="4" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                            </iframe>
+                                    </div>
+                                    <h6 class="card-title my-2 font-weight-lighter">Japan Society: Uki Uki [playlist]</h6>
+                            </div>
+                                    <div class="card-body card mb-4 shadow-lg" style="text-align: center; margin-top: 50px; background-image: url(https://www.publicdomainpictures.net/pictures/30000/nahled/light-wood-texture.jpg);">
+                                            <div class="iframe-container">
+                                                    <iframe width="490" height="315" 
+                                                        src="https://www.youtube.com/embed/videoseries?list=PLavFq2NFrHEubdzJ4G96ILQBXKG37cpsy" 
+                                                        frameborder="4" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                                    </iframe>
+                                            </div>
+                                            <h6 class="card-title my-2 font-weight-lighter">NHK vintage [playlist]</h6>       
+                             </div>
+                            </div>
+                        </div>
+                    </div>
+                <div class="container mt-3">
+                    <div class="card-deck mb-3 text-justify font-weight-light">
+                        <div class="card-body card mb-4 shadow-lg" style="text-align: center; margin-top: 50px; background-image: url(https://www.publicdomainpictures.net/pictures/30000/nahled/light-wood-texture.jpg);">
+                                <div class="iframe-container">
+                                        <iframe width="490" height="315"  
+                                            src="https://www.youtube.com/embed/videoseries?list=PL4071737C12790477" 
+                                            frameborder="4" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                        </iframe>
+                                </div>
+                                <h6 class="card-title my-2 font-weight-lighter">Japan Society [playlist]</h6>      
+                        </div>
+                        <div class="card-body card mb-4 shadow-lg" style="text-align: center; margin-top: 50px; background-image: url(https://www.publicdomainpictures.net/pictures/30000/nahled/light-wood-texture.jpg);">
+                            <div class="iframe-container">
+                                    <iframe width="490" height="315"  
+                                        src="https://www.youtube.com/embed/videoseries?list=PLF97A549D60C2EBA4" 
+                                        frameborder="4" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                    </iframe>
+                            </div>
+                            <h6 class="card-title my-2 font-weight-lighter">Japan Society: Waku Waku [playlist]</h6>                
+             </div>
+            </div>
+        </div>
+                    </div>
+                </div>
+
     </main>
+
      <!-- jQuery library (required by Bootstrap's JavaScript library) -->
      <script
      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
      crossorigin="anonymous"></script>
+     <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
 
    <!-- Bootstrap v4.3.1 JavaScript library -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-
-     <!-- Local Javascript File -->
-     <script src="js/app.js"></script>
-
-      <!-- https://albert-gonzalez.github.io/easytimer.js/ -->
-
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-      <script src="lib/easytimer/dist/easytimer.min.js"></script>
-      <script>
-          var timerInstance = new easytimer.Timer();
-      </script>
-
-
-  
-                    
+                 
 </body>
 
 <footer>
-     
+        <div class="container">
+                <h4 class="rainbow" style="font-family:Chalkduster; text-shadow: 2px 2px lightyellow; font-weight: 100; font-size: small;">&ensp;page created by Chelsea Davies&ensp;</h4> 
+        </div>
 </footer>
 
 </html> 

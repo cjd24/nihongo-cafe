@@ -7,19 +7,74 @@
 
 .rainbow-bckgd {
   background-image: linear-gradient(to left, rgb(184, 161, 184), rgba(105, 59, 138, 0.722), rgb(127, 204, 245), rgb(110, 230, 168), rgb(214, 220, 98), rgb(255, 202, 104), rgb(247, 151, 151));
+}
 
-  -webkit-animation: AnimationName 30s ease infinite;
-  animation: AnimationName 30s ease infinite;
-  
-  @-webkit-keyframes AnimationName {
-      0%{background-position:0% 50%}
-      50%{background-position:100% 50%}
-      100%{background-position:0% 50%}
+.hide {
+  display:none;
+}
+
+.show {
+  display:block;
+}
+
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56%; 
+  height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) { 
+  .iframe-container-music{
+    position: relative;
+    width: 100%;
+    padding-bottom: 15%; 
+    height: 0;
   }
-  @keyframes AnimationName { 
-      0%{background-position:0% 50%}
-      50%{background-position:100% 50%}
-      100%{background-position:0% 50%}
+  .iframe-container-music iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 }
 
+@media (max-width: 768px) { 
+  .iframe-container-music2{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56%; 
+    height: 0;
+  }
+  .iframe-container-music2 iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 768px) { 
+  .iframe-container-music3{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56%;
+    margin-left: -100px; 
+    height: 0;
+  }
+  .iframe-container-music3 iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -1,3 +1,30 @@
+function showFumction() {
+    var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+var timer = new Timer();
+timer.start();
+timer.addEventListener('secondsUpdated', function (e) {
+    $('#basicUsage').html(timer.getTimeValues().toString());
+});
+
+var timer = new Timer();
+timer.start({precision: 'seconds'});
+timer.addEventListener('secondsUpdated', function (e) {
+    $('#gettingValuesExample .hours').html(timer.getTimeValues().hours);
+    $('#gettingValuesExample .minutes').html(timer.getTimeValues().minutes);
+    $('#gettingValuesExample .seconds').html(timer.getTimeValues().seconds);
+
+    $('#gettingTotalValuesExample .hours').html(timer.getTotalTimeValues().hours);
+    $('#gettingTotalValuesExample .minutes').html(timer.getTotalTimeValues().minutes);
+    $('#gettingTotalValuesExample .seconds').html(timer.getTotalTimeValues().seconds);
+});
+
 var timer = new Timer();
 $('#timeTimer.startButton').click(function () {
     timer.start();
@@ -17,3 +44,5 @@ timer.addEventListener('started', function (e) {
 timer.addEventListener('reset', function (e) {
     $('#timeTimer.values').html(timer.getTimeValues().toString());
 });  
+
+
