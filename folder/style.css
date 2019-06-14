@@ -1,5 +1,3 @@
-svg {fill: white; width: 1.8em; padding-right: 2em; transition: 0.5s;}
-a {text-decoration-line: none;}
 
 .rainbow {
     background-image: linear-gradient(to left, rgb(184, 161, 184), rgba(105, 59, 138, 0.722), rgb(127, 204, 245), rgb(110, 230, 168), rgb(214, 220, 98), rgb(255, 202, 104), rgb(247, 151, 151));
@@ -79,4 +77,101 @@ a {text-decoration-line: none;}
     width: 100%;
     height: 100%;
   }
+}
+
+@media (max-width: 768px) { 
+  .image-del {
+ display: none;
+  }
+}
+
+/* based on https://codepen.io/sedran/pen/GYPevV  - kana-title*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root{
+    --bg-color: dimgray;
+}
+
+.kana-title body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: var(--bg-color);
+  font-family: ヒラギノ角ゴ Pro W3, Hiragino Kaku Gothic Pro,Osaka, メイリオ, Meiryo, ＭＳ Ｐゴシック, MS PGothic, sans-serif;
+}
+
+.kana-title h4{
+    font-size: 3em;
+    font-weight: normal;
+    margin-left: 20px; 
+    margin-top: 20px; 
+    font-style: italic;
+}
+.kana-title h3{
+  font-size: 3em;
+  font-weight: normal;
+  margin-left: 20px; 
+  margin-top: 20px; 
+  font-style: italic;
+}
+
+/* title styles */
+.kana-title span{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    line-height: 1.2;
+}
+
+.kana-title span::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, rgb(184, 161, 184), rgba(105, 59, 138, 0.722), rgb(127, 204, 245), rgb(110, 230, 168), rgb(214, 220, 98), rgb(255, 202, 104), rgb(247, 151, 151));
+    animation: a-ltr-after 2s cubic-bezier(.77,0,.18,1) forwards;
+    transform: translateX(-101%);
+}
+
+.kana-title span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    animation: a-ltr-before 2s cubic-bezier(.77,0,.18,1) forwards;
+    transform: translateX(0);
+}
+
+.kana-title span:nth-of-type(1)::before,
+.kana-title span:nth-of-type(1)::after{
+    animation-delay: 1s;
+}
+
+.kana-title span:nth-of-type(2)::before,
+.kana-title span:nth-of-type(2)::after{
+    animation-delay: 1.5s;
+}
+
+@keyframes a-ltr-after{
+    0% {transform: translateX(-100%)}
+    100% {transform: translateX(101%)}
+}
+
+@keyframes a-ltr-before{
+    0% {transform: translateX(0)}
+    100% {transform: translateX(200%)}
+}
+
+.hearts {
+  background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAAXNSR0IArs4c6QAAABJJREFUCB1jYGBg+A/ExAHsKgFV7gH/ssPq5wAAAABJRU5ErkJggg==);
 }
